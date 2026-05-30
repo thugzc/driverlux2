@@ -1,0 +1,648 @@
+body{
+    overflow-x: hidden;
+
+    font-family: "Afacad", sans-serif;
+    font-weight: 400;
+}
+
+#membership, #information, #FAQ, #contact {
+    scroll-margin-top: 80px;
+}
+
+.navigationButtons{
+    height: auto;
+    margin-bottom: 15px;
+    
+
+    display: flex;
+    justify-content: space-evenly;
+
+    nav{
+        max-width: 24%;
+
+        margin-top: 1vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            height: 7vh;
+            width: auto;
+            
+            
+        }
+        h4{
+            text-align: center;
+            margin: 0;
+
+            
+            font-size: 1.1rem;
+            line-height: 1.0;
+            font-weight: 500;
+        }
+    }
+}
+
+.membership{
+
+height: 35vh;
+width: 95%;
+margin: auto;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+background-image: url("/bilder2/memberSuvCar.png");
+
+border-radius: 25px;
+
+position: relative;
+
+
+    h2{
+        text-align: center;
+        padding: 2vh;
+        margin-top: 0px;
+        margin-bottom: 2vw;
+        background-color: $transparentDeepBlue;
+        backdrop-filter: blur(10px);
+        border-radius: 25px 25px 0px 0px;
+        color: $white;
+        
+
+        font-size: 1.6rem;
+        line-height: 1.0;
+        font-weight: 200;
+        
+
+    }
+    ul{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        display: inline-blocK;
+        flex-wrap: nowrap;
+
+        li:nth-child(2){
+            margin-right: 10px;
+        }
+
+        li{
+            
+            color: $white;
+            display: inline-block;
+            
+            background-color: $transparentDeepBlue;
+            backdrop-filter: blur(10px);
+            margin-top: 0px;
+            padding: 10px;
+            border-radius: 15px;
+            margin: 0px 0px 1vw 2vw;
+
+            font-size: 1.2rem;
+            line-height: 1.0;
+            font-weight: 200;
+            
+            
+            
+            
+        }
+    }
+    p{
+        background-color: $transparentDeepBlue;
+        margin-left: 2vw;
+        margin-top: 0px;
+        display: inline-block;
+        backdrop-filter: blur(10px);
+        
+        padding: 10px;
+        border-radius: 15px;
+
+        font-size: 0.8rem;
+        line-height: 1.0;
+        font-weight: 200;
+
+        color: $white;
+    }
+    .buyMembership{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        border-radius: 25px;
+        background-color: $ogreen;
+        color: $white;
+        
+        padding: 12px;
+        
+        border-color: $white;
+        
+        font-size: 1.3rem;
+        line-height: 0.7;
+        font-weight: 200;
+
+        font-family: "Afacad", sans-serif;
+
+
+        z-index: 20;
+
+        cursor: pointer;
+
+
+
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    .imageDetail{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    
+        background-color: $transparentDeepBlue;
+        backdrop-filter: blur(10px);
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+        height: 5.5vh;
+
+        z-index: 1;
+    }
+
+
+}
+
+.infoBoxes{
+
+    
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    div{
+
+        background-color: $lightBlue;
+        border-radius: 27px;
+        border: solid 1px $turquoise;
+
+        h2{
+            text-align: center;
+            background-color: $turquoise;
+            margin: 0px;
+            padding: 20px;
+            border-radius: 25px 25px 0px 0px;
+            color: $white;
+            
+        }
+
+        .imgContainer{
+
+            display: flex;
+            flex-direction: row;
+            margin-left: 3vw;
+            
+            img{
+
+            
+            
+            height: 5vh;
+            width: auto;
+            gap: 3px;
+        }
+
+        }
+        
+        p{
+            width: 90%;
+            justify-self: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        p:last-child{
+            margin-bottom: 15px;
+        }
+
+
+        h2, p{
+            font-size: 1.1rem;
+            line-height: 1.2;
+            font-weight: 200;
+        }
+        h4{
+            font-size: 1.2rem;
+            line-height: 1.2;
+            font-weight: 500;
+        }
+        
+    }
+
+    .info{
+        p:first-of-type{
+            margin-top: 5px;
+        }
+    }
+
+    .FAQ{
+
+        h4{
+            width: 90%;
+            justify-self: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        h4:first-of-type{
+            margin-top: 20px;
+        }
+    }
+}
+
+.contactWindow{
+    background-color: $deepblue;
+    height: 12vh;
+    margin-top: 12px;
+    position: relative;
+    
+
+    h2{
+        color: $white;
+        padding: 10px 0px 0px 10px;
+        margin: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .contactButton{
+        position: absolute;
+        height: 5vh;
+        border-radius: 25px;
+        left: 12px;
+        transform: translateY(-50%);
+        top: 65%;
+        width: 30vw;
+        background-color: $turquoise;
+        color: $white;
+        border: solid 1.5px $white;
+        font-size: 18px;
+
+        font-family: "Afacad", sans-serif;
+
+        font-size: 1.3rem;
+        line-height: 1.0;
+        font-weight: 200;
+
+        cursor: pointer;
+    }
+
+    img{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        height: 7vh;
+        width: auto;
+    }
+}
+
+.bottomSpacer{
+    height: 15px;
+}
+
+.contactBox{
+
+    background-color: $deepblue;
+    height: auto;
+    padding-bottom: 5px;
+
+    display: none;
+    
+    .box{
+        background-color: $deepblue;
+        .contactInfo{
+            background-color: $deepblue;
+
+            .infoBox{
+                
+                position: relative;
+                background-color: white;
+                border-radius: 15px;
+                width: 80%;
+                margin: auto;
+                height: auto;
+                margin-bottom: 10px;
+                
+                padding: 15px 15px 55px 15px;
+                
+                h3{
+                    margin: 0;
+                    font-size: 1.2rem;
+                }
+                p{
+                    margin: 0;
+                    font-size: 1.1rem;
+
+                }
+                h4{
+                    margin: 0;
+                    font-size: 1.1rem;
+                }
+                .contactFutherButton{
+                    position: absolute;
+                    
+                    height: 3.5vh;
+                    width: 35vw;
+                    border-radius: 25px;
+                    right: 3%;
+                    bottom: 6%;
+                    
+                    
+                    background-color: $turquoise;
+                    color: $white;
+                    border: solid 1.5px $white;
+                    font-size: 18px;
+
+                    font-family: "Afacad", sans-serif;
+
+                    font-size: 1.3rem;
+                    line-height: 1.0;
+                    font-weight: 200;
+
+                    cursor: pointer;
+                }
+
+                .infoSeparator{
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+.emptySpace{
+    height: 4vh;
+}
+
+@media all and (min-width: 600px){
+
+.navigationButtons{
+        display: none;
+    }
+
+    .pageLayout{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .navigationButtons{
+        display: flex;
+        position: sticky;
+        top: 7vh;
+        width: 200px;
+        flex-shrink: 0;
+        
+
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0;
+
+        background-color: $white;
+        
+        padding: 20px 0;
+
+
+         
+        
+
+        nav:hover{
+                background-color: $deepblue;
+                color: white;
+                border-radius: 5px;
+        }
+
+        nav{
+            max-width: 100%;
+            width: 95%;
+            margin: 0px 0px 0px 5px;
+            padding: 12px 20px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 12px;
+            cursor: pointer;
+
+            
+
+            img{
+                height: 28px;
+                width: auto;
+                flex-shrink: 0;
+            }
+
+            h4{
+                text-align: left;
+
+                font-size: 1.3rem;
+                line-height: 1.0;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .mainContent{
+        
+        
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .membership{
+        width: 95%;
+        height: 50vh;
+
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+
+            li{
+                display: inline-block;
+                font-size: 1.4rem;
+
+            }
+
+            
+        }
+
+        .buyMembership{
+            font-size: 1.5rem;
+            line-height: 1.0;
+            height: 6vh;
+            width: 15vw;
+            bottom: -1%;
+            border-radius: 50px;
+        }
+    }
+
+    .infoBoxes{
+        width: 95%;
+
+        .info{
+
+            h2{
+
+                font-size: 1.6rem;
+                line-height: 1.3;
+                font-weight: 300;
+            }
+        }
+        .FAQ{
+
+            h2{
+            
+            font-size: 1.7rem;
+            line-height: 1.3;
+            font-weight: 300;
+        
+            }
+        }
+    }
+
+    .contactWindow{
+        
+        width: 100vw;
+        
+
+        .contactButton{
+            width: 15vw;
+        }
+    }
+
+
+
+    .info{
+        min-height: 45vh;
+
+        
+
+        .infoBody{
+            display: flex;
+            flex-direction: row;
+            min-height: 28vh;
+
+            .textContent{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                .imgContainer{
+                    margin-left: 0px;
+                }
+
+                p{
+
+                    font-size: 1.2rem;
+                    line-height: 1.3;
+                    font-weight: 300;
+                    margin-bottom: 2vh;
+                }
+            }
+
+            .infoImage{
+                width: 70vw;
+                height: 45vh;
+                background-image: url("/bilder/rentGraySuvJPEG.jpg");
+                background-size: cover;
+                background-position: center;
+                border-radius: 0px 0px 25px 0px;
+                
+            }
+        }
+    }
+
+    .FAQ{
+        min-height: 45vh;
+
+        
+
+        .FAQBody{
+            display: flex;
+            flex-direction: row;
+            min-height: 28vh;
+
+            .FAQImage{
+                width: 49vw;
+                height: 45vh;
+                background-image: url("/bilder/rentKiaJPEG.jpg");
+                background-size: cover;
+                background-position: center;
+                border-radius: 0px 0px 0px 25px;
+            }
+
+            .FAQContent{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+
+                p{
+
+                    font-size: 1.2rem;
+                    line-height: 1.3;
+                    font-weight: 300;
+                    margin-bottom: 2vh;
+                }
+                h4{
+                    font-size: 1.3rem;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    
+                }
+            }
+        }
+    }
+    
+
+    .contactBox{
+        height: auto;
+
+        .box{
+            height: auto;
+        }
+        .contactInfo{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            padding: 20px;
+            height: auto;
+
+            .infoBox{
+                height: 10vh !important;
+                flex: 1;
+                width: auto;
+                margin-bottom: 0;
+                
+
+                .contactFutherButton{
+                    
+                    width: 10vw !important;
+                    right: 20%;
+                    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+                }
+            }
+        }
+
+        
+    }
+
+}

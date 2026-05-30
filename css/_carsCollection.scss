@@ -1,0 +1,192 @@
+
+.imageTitle{
+
+    
+    background-image: url(/bilder2/collectionCars.png);
+    height: 20vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    border-radius: 0px 0px 15px 15px;
+
+    h2{ 
+        position: absolute;
+        margin: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 5.5vh;
+        right: 50%;
+
+        border-radius: 0px 0px 15px 15px;
+        transform: translateX(50%);
+
+        text-align: center;
+        color: $white;
+
+        font-size: 1.6rem;
+        font-family: "Afacad", sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+
+        padding-top: 20px;
+
+        background-color: $transparentDeepBlue;
+
+    }
+}
+
+.carsCollection{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    gap: 10px;
+
+    nav:hover h4,
+    nav:hover p,
+    nav:hover button {
+    opacity: 1;
+    transform: translateY(0);
+    }
+    
+    nav{
+
+        background-color: $lightBlue;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 25px;
+
+        border: solid 1px $turquoise;
+
+        display: flex;
+        justify-content: center;
+
+        position: relative;
+        
+
+        img{
+            width: 100%;
+            border-radius: 25px;
+            border: solid 1px $turquoise;
+
+            transition: 0.3s ease;
+
+            object-fit: cover;
+
+
+            
+        }
+    
+        img:hover {
+            transform: scale(0.9);
+            
+        }
+
+        
+
+        h4, p, button {
+            opacity: 0;
+            transform: translateY(10px); // fade in effekt ner från
+            transition: 0.35s ease;
+            font-size: 1.1rem;
+            font-family: "Afacad", sans-serif;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+        h4{
+            position: absolute;
+            bottom: 8%;
+            left: 8%;
+            color: $white;
+            font-size: 1.4rem;
+            text-shadow: 6px 6px 18px rgba(0, 0, 0, 1);
+        }
+        p{
+            position: absolute;
+            bottom: 5%;
+            left: 8%;
+            color: $white;
+            font-size: 1.2rem;
+            text-shadow: 6px 6px 18px rgba(0, 0, 0, 1);
+
+            
+            
+        }
+        button{
+        position: absolute;
+        bottom: 10%;
+        right: 7%;
+        
+        height: 3.5vh;
+        border-radius: 25px;
+        background-color: $ogreen;
+        color: $white;
+        
+        padding: 6px;
+        font-size: 14px;
+        border-color: $white;
+
+        font-size: 1.1rem;
+        
+        line-height: 1.0;
+
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+        }
+    }
+}
+.smallSpace{
+    height: 20px;
+}
+
+@media all and (min-width: 600px) {
+
+
+    .imageTitle {
+        height: 40vh;
+
+        h2 {
+            font-size: 2rem;
+            line-height: 1.4;
+            height: 8vh;
+            padding-top: 28px;
+        }
+    }
+
+    .carsCollection {
+        margin-top: 5vh;
+        column-count: 3;
+        column-gap: 10px;
+        width: 90%;
+        display: block;
+
+        nav {
+
+            h4{
+
+                
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 1.4rem;
+            }
+            .button{
+                font-size: 1.5rem;
+            }
+
+            margin-bottom: 10px;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,323 @@
+.rentSearchSection{
+    height: 50vh;
+    background-color: $lightBlue;
+    border-radius: 0px 0px 25px 25px;
+
+    .rentWindow{
+        position: absolute;
+        inset: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: rgba(255, 255, 255, 0.692);
+        width: 70vw;
+        height: 33vh;
+        margin: auto;
+        border-radius: 20px;
+
+        top: -45vh;
+
+        nav:first-child{
+            margin-top: 10px;
+        }
+
+        nav{
+            background-color: rgba(255, 255, 255, 0);
+            width: 90%;
+            height: auto;
+            margin-top: 0px;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 0px;
+
+            p{
+                background-color: rgba(255, 255, 255, 0);
+                font-family: "Afacad", sans-serif;
+                font-weight: bold;
+                color: $evenDarkerGray;
+                font-size: 1.3rem;
+                margin: 2px;
+            }
+
+            .titleImgSpacer{
+                display: flex;
+                justify-content: space-between;
+
+                
+                img{
+                    
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            input{
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    box-shadow: none;
+                    appearance: none;
+                    font-family: "Afacad", sans-serif;
+                    font-size: 1.15rem;
+                    font-weight: 600;
+                }
+        }
+
+        .seperateSpan{
+            background-color: rgb(107, 107, 107);
+            width: 100%;
+            height: 2px;
+            margin-top: 4px;
+        }
+
+        .searchButton{
+            background-color: $ogreen;
+            height: 7.4vh;
+            width: 99%;
+            margin-bottom: 2px;
+            border-radius: 0px 0px 20px 20px;
+            border: none;
+            font-family: "Afacad", sans-serif;
+            font-size: 2rem;
+            color: $white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .optionsContainer{
+        display: flex;
+        gap: 10px;
+        position: relative;
+        bottom: -36vh;
+        height: 15vh;
+        padding: 0px 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        nav{
+            flex: 0 0 30%;
+            scroll-snap-align: start;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            img{
+                width: 100px;
+            }
+
+            h3{
+                margin: 0px;
+                text-align: center;
+                position: relative;
+                bottom: 12%;
+                font-family: "Afacad", sans-serif;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.rentalCarsContainer{
+
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+    nav{
+
+        width: 95%;
+        height: auto;
+        margin: auto;
+        background-color: $lightBlue;
+        border-radius: 15px;
+        border: solid $ogreen 1px;
+        position: relative;
+        
+        h5{
+            font-size: 1.2rem;
+            margin: 8px;
+        }
+        img{
+        width: 100%;
+
+        }
+        h4{
+        margin: 5px 0px 0px 10px;
+        font-size: 1.5rem;
+
+
+        }
+        p{
+        margin: 1px 0px 0px 10px;
+        font-size: 1.1rem;
+
+        }
+        h3{
+            margin: 8px 0px 6px 10px;
+            font-size: 1.4rem;
+        }
+        button{
+
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+        
+        height: auto;
+        border-radius: 25px;
+        background-color: $ogreen;
+        color: $white;
+        
+        padding: 8px 10px;
+        font-size: 20px;
+        border-color: $white;
+
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+        
+        }
+
+
+        h5, img, h4, p, h3, button{
+            font-family: "Afacad", sans-serif;
+
+        }
+    }
+}
+
+.space1{
+    height: 13px;
+}
+
+@media all and (min-width: 600px){
+
+    .rentSearchSection{
+    height: 35vh;
+
+    .rentWindow{
+        display: grid;
+        grid-template-columns: 1fr 2px 1fr 2px 1fr 1fr;
+        align-items: center;
+
+        width: 70vw;
+        height: 10vh;
+        top: -60vh;
+        border-radius: 20px;
+        flex-direction: unset;
+        justify-content: unset;
+
+        nav:first-child{
+            margin-left: 16px;
+        }
+
+        nav{
+            width: 90%;
+            margin: 5px;
+
+            
+
+            p{
+                font-size: 1.3rem;
+                margin: 2px;
+            }
+        }
+
+        .seperateSpan{
+            background-color: rgb(187, 187, 187);
+            width: 2px;
+            height: 100%;
+            margin: 0;
+        }
+
+        .seperateSpan2{
+            background-color: rgb(187, 187, 187);
+            width: 2px;
+            height: 100%;
+        }
+
+        .searchButton{
+            height: 96%;
+            width: 100%;
+            margin-right: 2px;
+            margin-top: 2px;
+            border-radius: 0px 20px 20px 0px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .optionsContainer{
+        gap: 4vw;
+        bottom: -20vh;
+        overflow-x: unset;
+        scroll-snap-type: unset;
+        justify-content: center;
+
+        nav{
+            flex: 0 0 auto;
+            cursor: pointer;
+            
+        }
+    }
+    }
+  
+
+        .rentalCarsContainer{
+            margin-top: 4vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+        nav{
+            width: 100%;
+            margin: 0;
+
+            img{
+                width: 100%;
+                height: 30vh;
+                object-fit: cover;
+            }
+
+            h5{
+                font-size: 1.1rem; 
+            }
+            h4{
+                font-size: 1.4rem;
+            }
+            p{ 
+                font-size: 1.1rem; 
+            }
+            h3{
+                font-size: 1.3rem; 
+            }
+
+            button{
+                font-size: 1.3rem;
+                padding: 6px 10px;
+            }
+        }
+    }
+
+  
+}

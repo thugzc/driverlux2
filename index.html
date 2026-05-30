@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driverlux</title>
+    <link rel="icon" href="bilder/icon30w.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <section class="topHeader">
+            <label class="hamburgerMenu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Information</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/collection.html">Kollektion</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Hjälp Center</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Om oss</a></li>
+                    <span class="spanStroke"></span>
+                </ul>
+            </aside>
+            <img src="bilder/logo400w.png" alt="">
+            <img src="bilder/profilelogo.png" alt="">
+        </section>
+        <div class="detail"></div>
+        <nav class="infoBar">
+        <h2>Tydliga priser, inga överraskningar</h2>
+        </nav>
+    </header>
+
+    <script>
+        document.querySelector('.topHeader img:first-of-type').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script> <!-- lösning för att inte ändra logo term till a, vilket förstörde hela koden-->
+ <!-- HEADER     -->
+
+    <script> // ANIMATION FÖR ATT DÖLJA H2 NÄR MAN SCROLLAR NU NÄR HEADER ÄR STICKY
+        const infoBar = document.querySelector(".infoBar");
+
+        function checkScroll(){
+            if(window.scrollY > 50){
+                infoBar.classList.add("hidden");
+            }else{
+                infoBar.classList.remove("hidden");
+            }
+        }
+
+        window.onscroll = checkScroll;
+    </script>
+
+
+    <section class="mainRentSection">
+        <div class="rentWindow">
+            <nav class="input1">
+                    <div class="titleImgSpacer">
+                        <p>Hämta</p>
+                        <img src="bilder/iconLocation48w.png" alt="">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Välj..">
+            </nav>
+            <span class="seperateSpan2"></span>
+            <nav class="input2">
+               
+                    <div class="titleImgSpacer">
+                         <p>Återlämning</p>
+                        <img src="bilder/iconLocation48w.png" alt="">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Välj..">
+            </nav>
+            <span class="seperateSpan"></span>
+            <nav class="input3">
+                
+                    <div class="titleImgSpacer">
+                        <p>Datum</p>
+                        <img src="bilder/iconCalendar48w.png" alt="">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Välj..">
+            </nav>
+            <button class="searchButton"><a href="html/rentalCars.html" class="searchButton">Sök bilar →</a></button>
+        </div>
+    </section>
+
+    <section class="trustpilotSection">
+        <div class="gridContainer">
+            <h2>Våra kunders Trustpilot recensioner</h2>
+            <div class="rating">
+                <img src="bilder2/5trustpilotstars.png" alt="">
+                <h3>4.7 medelbetyg</h3>
+            </div>
+            <nav class="logoTitle">
+                <img src="bilder2/trustpilotlogo.png" alt="">
+                <h3 class="trustpilotName">Trustpilot</h3>
+            </nav>
+        </div>
+
+
+
+    <article class="reviewSection">
+        <div class="reviewAnimation">
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpBlue32w.png" alt="">
+                    <h4>Erikas Rodovicius</h4>
+                    <p>2d sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Smidig bokning och rimliga priser. </p>
+            </div>
+
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpGreen32w.png" alt="">
+                    <h4>Isak Frandén</h4>
+                    <p>9d sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Väldigt nöjd med servicen. Tydlig information, bra priser och inga kostigheter.</p>
+            </div>
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpRed32w.png" alt="">
+                    <h4>Malte Viklund</h4>
+                    <p>12h sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Medlemskapet är ett skämt. Undvik!!</p>
+            </div>
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpPink32w.png" alt="">
+                    <h4>Noah Tängman</h4>
+                    <p>5d sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Ingen info om att man ska behöva tanka själv. Rekommenderar ej.</p>
+            </div>
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpOrange32w.png" alt="">
+                    <h4>Milian Johansson</h4>
+                    <p>18h sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Inte nöjd, dålig kundservice</p>
+            </div>
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpPurple32w.png" alt="">
+                    <h4>Ericus Roidivus</h4>
+                    <p>3d sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Bra sida, helt okej gränssnitt.</p>
+            </div>
+            <div class="reviewContainer">
+                <nav class="gridReview">
+                    <img class="pfpReview" src="bilder/pfpGreen32w.png" alt="">
+                    <h4>Walte Viklund</h4>
+                    <p>7d sedan</p>
+                    <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                </nav>
+                <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                <p class="review">Bra, Rekommenderar starkt!</p>
+            </div>
+
+            
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="bilder/pfpBlue32w.png" alt="">
+                        <h4>Erikas Rodovicius</h4>
+                        <p>2d sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Smidig bokning och rimliga priser. </p>
+                </div>
+
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="bilder/pfpGreen32w.png" alt="">
+                        <h4>Isak Frandén</h4>
+                        <p>9d sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Väldigt nöjd med servicen. Tydlig information, bra priser och inga kostigheter.</p>
+                </div>
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="bilder/pfpRed32w.png" alt="">
+                        <h4>Malte Viklund</h4>
+                        <p>12h sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Medlemskapet är ett skämt. Undvik!!</p>
+                </div>
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="bilder/pfpPink32w.png" alt="">
+                        <h4>Noah Tängman</h4>
+                        <p>5d sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Ingen info om att man ska behöva tanka själv. Rekommenderar ej.</p>
+                </div>
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="bilder/pfpOrange32w.png" alt="">
+                        <h4>Milian Johansson</h4>
+                        <p>18h sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Inte nöjd, dålig kundservice</p>
+                </div>
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="/bilder/pfpPurple32w.png" alt="">
+                        <h4>Ericus Roidivus</h4>
+                        <p>3d sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Bra sida, helt okej gränssnitt.</p>
+                </div>
+                <div class="reviewContainer duplicate">
+                    <nav class="gridReview">
+                        <img class="pfpReview" src="bilder/pfpGreen32w.png" alt="">
+                        <h4>Walte Viklund</h4>
+                        <p>7d sedan</p>
+                        <img class="tpLogo" src="bilder2/trustpilotlogo.png" alt="">
+                    </nav>
+                    <img class="starRating" src="bilder2/5trustpilotstars.png" alt="">
+                    <p class="review">Bra, Rekommenderar starkt!</p>
+                </div>
+         </div>
+    </article>
+    </section>
+    <script>
+    var names = document.querySelectorAll('.gridReview h4');
+
+    for(var i = 0; i < names.length; i++){ //för att korta ner namnen om de är för långa
+        if (names[i].textContent.length > 13){
+            names[i].textContent = names[i].textContent.slice(0, 13) + '..';
+        }
+    }
+
+    var times = document.querySelectorAll('.gridReview p'); //samma men när den är publicerad
+    for(var i = 0; i < times.length; i++){
+        if(times[i].textContent.length > 10){
+            times[i].textContent = times[i].textContent.slice(0, 10) + '..';
+        }
+    }
+    </script>
+
+    <section class="importantInfoSection">
+
+        <h3 class="h3important">Krav vid upphämtning</h3>
+
+        <div class="flexContainer">
+            <nav>
+                <img src="bilder/identificationImg.png" alt="">
+                <p class="infoText">För att hämta ut bilen behöver du ha med dig giltigt körkort (minst 1 år). Du måste vanligtvis vara minst 21 år (ibland 18). Förare under 25 kan få en extra avgift.</p>
+                <h5>Körkort</h5>
+                <p>Läs mer..</p>
+            </nav>
+            <span class="seperateSpan">.</span>
+            <nav>
+                <img src="bilder/cardImg.png" alt="">
+                <p class="infoText">Vid upphämtning av bil krävs kreditkort även om betalning sker via hemsidan. Många stationer accepterar även debitkort, men kontrollera alltid betalvillkoren innan du bokar.</p>
+                <h5>Betalkort</h5>
+                <p>Läs mer..</p>
+            </nav>
+            <span class="seperateSpan">.</span>
+            <nav>
+                <img src="bilder/documentsImg.png" alt="">
+                <p class="infoText">Ta med ditt bokning-ID. Du kan ändra eller avboka din bokning kostnadsfritt fram till 48 timmar före upphämtning.</p>
+                <h5>Boknings-id</h5>
+                <p>Läs mer..</p>
+            </nav>
+        </div>
+    </section>
+
+    <script>
+    var navs = document.querySelectorAll('.flexContainer nav'); 
+ 
+    for(var i = 0; i < navs.length; i++){ // för att hela nav ska bli klickbar
+        navs[i].onclick = function(){
+            window.location.href = 'html/info.html';
+        }
+    }
+    </script> <!-- lösning för att inte ändra logo term till a, snabbaste lösningen och fungerar-->
+
+<article class="memberAd">
+
+    <div class="memberContainer">
+        <h3 class="memberH3">Spara ännu mer → Bli medlem</h3>
+        <ul class="textList">
+            <li>Prioriterad tillgång till premium bilar.</li>
+            <li>Spara upp till 30% vid bokning.</li>
+            <li>Personlig support.</li>
+        </ul>
+        <p>För 429 kr/månaden.</p>
+    </div>
+    <div class="memberImage"></div>
+    <a class="memberMoreButton" href="html/info.html">Mer om medlemskap →</a>
+</article>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <span class="footerDetail"></span>
+        <img class="logoFooter" src="bilder/icon140w.png" alt="">
+        <div class="trustPilotInfo">
+            <img src="bilder2/5trustpilotstars.png" class="5TPStarsFooter" alt="">
+            <h6>6.7k omdömen på</h6>
+            <img src="bilder2/trustpilotlogo.png" alt="">
+            <h6>Trustpilot</h6>
+        </div>
+
+        
+        <div class="footerLinks">
+            <nav class="FöretagLinks">
+                <h4>Företag</h4>
+                <p><a href="html/info.html">Om oss</a></p>
+                <p><a href="html/collection.html">Kollektion</a></p>
+                <p><a href="html/info.html">Medlemskap</a></p>
+                <p><a href="html/info.html">FAQ</a></p>
+            </nav>
+            <nav class="KundserviceLinks">
+                <h4>Kundservice</h4>
+                <p>Din bokning</p>
+                <p><a href="html/info.html">Hjälp Center</a></p>
+                <p>Garantier</p>
+            </nav>
+        </div>
+        <span class="seperateSpanFooter"></span>
+        <div class="extraLinksBottom">
+            <h4 class="titleOther">Annat</h4>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+            <p>Terms Of Conditions</p>
+        </div>
+        <span class="footerDetail2"></span>
+        <h6 class="copyRightText">© DriveLux 2026</h6>
+    </footer>
+
+    
+</body>
+</html>
+
+

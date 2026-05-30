@@ -1,0 +1,827 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  margin: 0;
+}
+body header {
+  background-color: #FFFFFF;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  height: 7vh;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+body header .topHeader {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+  min-height: 65px;
+}
+body header .topHeader .hamburgerMenu {
+  top: 1%;
+  width: 50px;
+  position: relative;
+  z-index: 2;
+}
+body header .topHeader img:first-of-type {
+  max-width: 190px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+body header .topHeader img:last-of-type {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex: none;
+  width: 50px;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+body header .detail {
+  background-color: #014646;
+  height: 5px;
+  width: 100%;
+}
+body header .infoBar {
+  background-color: #007A7A;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(0);
+  opacity: 1;
+  z-index: 2;
+}
+body header .infoBar h2 {
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  color: #073F3F;
+  margin: 0;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5vh;
+}
+body header .infoBar.hidden {
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.TEMPspacer {
+  height: 300px;
+}
+
+footer {
+  background-color: #0B1C3A;
+  position: relative;
+}
+footer .logoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF;
+  height: 5vh;
+  width: auto;
+}
+footer .footerDetail {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #007A7A;
+}
+footer .trustPilotInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin-top: 0px;
+  color: #FFFFFF;
+  height: 4vh;
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+footer .trustPilotInfo img {
+  height: 2.5vh;
+  width: auto;
+}
+footer .trustPilotInfo h6 {
+  /* FONT */
+  font-family: "Afacad", sans-serif;
+  /* FONT */
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+footer .footerLinks {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #FFFFFF;
+}
+footer .footerLinks nav h4 {
+  margin: 8px;
+  font-size: 1.6rem;
+  /* FONT */
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  /* FONT */
+}
+footer .footerLinks nav p {
+  /* FONT */
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  /* FONT */
+  font-size: 1.2rem;
+  color: #c5c5c5;
+}
+footer .footerLinks nav p a {
+  text-decoration: none;
+  color: #c5c5c5;
+}
+footer .footerLinks nav p a:hover {
+  color: #FFFFFF;
+}
+footer .footerLinks nav p:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+footer .seperateSpanFooter {
+  display: block;
+  height: 2px;
+  width: 80%;
+  background-color: white;
+  margin: auto;
+}
+footer .extraLinksBottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  color: #FFFFFF;
+  height: 5vh;
+}
+footer .extraLinksBottom p {
+  /* FONT */
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  /* FONT */
+  font-size: 18px;
+  color: #c5c5c5;
+}
+footer .extraLinksBottom p:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+footer .footerDetail2 {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #007A7A;
+  margin-top: 10px;
+}
+footer .copyRightText {
+  text-align: left;
+  margin: 0px;
+  font-size: 16px;
+  padding: 6px;
+  background-color: #DEE3EB;
+  color: #0B1C3A;
+  /* FONT */
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+  /* FONT */
+}
+
+.titleOther {
+  display: none;
+}
+
+@media all and (min-width: 600px) {
+  footer .seperateSpanFooter {
+    display: none;
+  }
+  footer .footerLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    align-items: start;
+    text-align: center;
+  }
+  footer .footerLinks nav {
+    width: 100%;
+  }
+  footer .extraLinksBottom {
+    position: absolute;
+    top: 42%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 26.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    height: auto;
+  }
+  footer .extraLinksBottom h4 {
+    margin: 8px;
+    font-size: 1.6rem;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    color: #FFFFFF;
+  }
+  footer .extraLinksBottom p {
+    margin: 8px;
+    font-size: 1.2rem;
+    color: #c5c5c5;
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+  }
+  footer .extraLinksBottom p:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  footer .titleOther {
+    display: block;
+  }
+}
+body {
+  font-family: "Afacad", sans-serif;
+}
+
+.carPreview .leftButton {
+  display: none;
+}
+.carPreview .rightButton {
+  display: none;
+}
+.carPreview .carPreviewImages {
+  display: flex;
+  gap: 5px;
+  height: 25vh;
+  margin: 10px 0px 7px 5px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.carPreview .carPreviewImages::-webkit-scrollbar {
+  display: none;
+}
+.carPreview .carPreviewImages img {
+  border-radius: 15px;
+  flex: 0 0 30%;
+  scroll-snap-align: start;
+}
+
+.imgSeperate {
+  display: block;
+  height: 3px;
+  width: 95%;
+  margin: auto;
+  background-color: #575757;
+  border-radius: 25px;
+}
+
+.carTitle {
+  margin: 10px 0px 10px 10px;
+}
+.carTitle .brandAndType {
+  display: flex;
+}
+.carTitle .brandAndType h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.carTitle .brandAndType h4 {
+  margin: 0 0 0 10px;
+  font-size: 1.4rem;
+  margin-top: 5px;
+  border: 1px black solid;
+  border-radius: 20px;
+  height: 70%;
+  padding: 0px 4px 0px 5px;
+  line-height: 1.25;
+}
+.carTitle h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.bookSection {
+  background-color: #DEE3EB;
+  height: auto;
+  width: 95%;
+  margin: auto;
+  border: solid #c5c5c5 1px;
+  border-radius: 15px;
+  position: relative;
+}
+.bookSection .titleChangeButton {
+  margin: auto;
+  display: flex;
+}
+.bookSection .titleChangeButton h2 {
+  font-size: 1.3rem;
+}
+.bookSection .titleChangeButton button {
+  position: absolute;
+  top: 2.5%;
+  right: 3%;
+  height: 3.5vh;
+  border-radius: 25px;
+  background-color: #007A7A;
+  color: #FFFFFF;
+  padding: 6px;
+  font-size: 14px;
+  border-color: #FFFFFF;
+  font-family: "Afacad", sans-serif;
+  line-height: 1;
+  font-size: 1rem;
+}
+.bookSection .seperateDetail {
+  display: block;
+  height: 2px;
+  width: 95%;
+  margin: auto;
+  background-color: #999999;
+  border-radius: 25px;
+}
+.bookSection .seperateSpan {
+  background-color: #999999;
+  height: 2px;
+  width: 100%;
+  border-radius: 25px;
+  display: block;
+  margin-top: 5px;
+}
+.bookSection nav {
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0);
+  width: 90%;
+  height: auto;
+  margin-top: 10px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+.bookSection nav h3 {
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+.bookSection nav .infoImgSpacer {
+  display: flex;
+  justify-content: space-between;
+}
+.bookSection nav .infoImgSpacer p {
+  font-size: 1.2rem;
+  margin: auto auto auto 5px;
+}
+.bookSection nav .infoImgSpacer img {
+  height: 30px;
+  width: 30px;
+}
+.bookSection .detailedPriceTags div {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.bookSection .detailedPriceTags div h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  margin-top: 8px;
+}
+.bookSection .detailedPriceTags div h5 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  height: 0.5vh;
+  margin-top: 8px;
+}
+.bookSection h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 0;
+  color: #575757;
+}
+
+.carInformationSection .titleTags {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.carInformationSection .titleTags nav {
+  width: 42%;
+  margin-left: 5vw;
+}
+.carInformationSection .titleTags nav h3 {
+  font-size: 1.5rem;
+  margin: 18px 0px 0px 0px;
+}
+.carInformationSection .titleTags nav p {
+  font-size: 1.3rem;
+  margin: 0px;
+}
+
+.rentInformation {
+  width: 90%;
+  margin: 30px auto auto auto;
+}
+.rentInformation nav {
+  display: flex;
+  justify-content: space-between;
+}
+.rentInformation nav h4 {
+  margin: 0px;
+  font-size: 25px;
+}
+.rentInformation nav img {
+  height: 30px;
+  width: 30px;
+}
+.rentInformation .seperateSpan {
+  background-color: #999999;
+  height: 2px;
+  width: 95%;
+  border-radius: 25px;
+  display: block;
+  margin: 5px auto auto auto;
+}
+.rentInformation .rentDetails .gridParent {
+  display: grid;
+  grid-template-columns: auto 75vw auto;
+  grid-template-rows: 50% 50%;
+  -moz-column-gap: 0px;
+       column-gap: 0px;
+  row-gap: 5px;
+  height: 100px;
+  margin-top: 10px;
+  grid-template-areas: "img title" "detail info";
+}
+.rentInformation .rentDetails .gridParent img {
+  grid-area: img;
+  height: 30px;
+  width: 30px;
+  margin-top: 3vh;
+}
+.rentInformation .rentDetails .gridParent h3 {
+  grid-area: title;
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+.rentInformation .rentDetails .gridParent .verticalSpan {
+  grid-area: detail;
+  background-color: #999999;
+  height: 7vh;
+  width: 2px;
+  border-radius: 25px;
+  display: block;
+  margin: 5px auto auto auto;
+}
+.rentInformation .rentDetails .gridParent p {
+  grid-area: info;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+.bookRentButton {
+  height: 7vh;
+  background-color: #FFFFFF;
+}
+.bookRentButton button {
+  margin: auto;
+  margin-top: 40px;
+  display: block;
+  height: auto;
+  border-radius: 25px;
+  background-color: #007A7A;
+  color: #FFFFFF;
+  padding: 8px 35px;
+  font-size: 1.6rem;
+  border-color: #FFFFFF;
+  font-family: "Afacad", sans-serif;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+@media all and (min-width: 600px) {
+  .carPreview {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .carPreview .leftButton, .carPreview .rightButton {
+    position: absolute;
+    top: 45%;
+    background: rgba(255, 255, 255, 0.705);
+    color: #FFFFFF;
+    border: 2px #007A7A solid;
+    outline: 2.5px #FFFFFF solid;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 2rem;
+    font-family: "Afacad", sans-serif;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 10;
+    display: block;
+  }
+  .carPreview .leftButton img, .carPreview .rightButton img {
+    height: 25px;
+    width: auto;
+  }
+  .carPreview .leftButton {
+    left: 2%;
+  }
+  .carPreview .leftButton img {
+    position: absolute;
+    left: 14%;
+    top: 16%;
+  }
+  .carPreview .rightButton {
+    right: 2%;
+  }
+  .carPreview .rightButton img {
+    rotate: 180deg;
+    position: absolute;
+    right: 12%;
+    top: 14%;
+  }
+  .carPreview .carPreviewImages {
+    scroll-behavior: smooth;
+    height: 40vh;
+    margin: 10px 0px 7px 10px;
+  }
+  .carPreview .carPreviewImages img {
+    flex: 0 0 20%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .carTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin: 10px 0px 10px 20px;
+  }
+  .carTitle h2 {
+    font-size: 2rem;
+  }
+  .carTitle h3 {
+    font-size: 1.4rem;
+  }
+  .pageLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "title  tags" "book   info" "book   info";
+    gap: 20px;
+    width: 90%;
+    margin: auto;
+  }
+  .carTitle {
+    grid-area: title;
+  }
+  .carInformationSection {
+    grid-area: tags;
+  }
+  .carInformationSection .titleTags {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+  .carInformationSection .titleTags nav {
+    width: auto;
+    margin: 0;
+  }
+  .carInformationSection .titleTags nav h3 {
+    font-size: 1.6rem;
+    margin: 10px 0px 0px 0px;
+  }
+  .carInformationSection .titleTags nav p {
+    font-size: 1.2rem;
+  }
+  .bookSection {
+    grid-area: book;
+    height: auto;
+    width: 100%;
+    margin: 0;
+  }
+  .bookSection h6 {
+    margin-bottom: 1vh;
+  }
+  .rentInformation {
+    grid-area: info;
+    width: 100%;
+    margin: 0;
+  }
+  .rentInformation .rentDetails .gridParent {
+    grid-template-columns: auto 1fr;
+  }
+  .rentInformation .rentDetails .gridParent h3 {
+    line-height: 1.3;
+    margin-left: 2px;
+  }
+  .bookRentButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .bookRentButton button {
+    margin: 0;
+  }
+}
+:root {
+  --bar-width: 50px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #014646;
+  --background: white;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburgerMenu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburgerMenu:has(input:checked) {
+  --background: #333;
+}
+
+.hamburgerMenu:has(input:focus-visible)::before,
+.hamburgerMenu:has(input:focus-visible)::after,
+.hamburgerMenu input:focus-visible {
+  border: 1px solid var(--background);
+  box-shadow: 0 0 0 1px var(--foreground);
+}
+
+.hamburgerMenu::before,
+.hamburgerMenu::after,
+.hamburgerMenu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 25px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing), rotate var(--animation-timing), translate var(--animation-timing), background-color var(--animation-timing);
+}
+
+.hamburgerMenu input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburgerMenu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburgerMenu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburgerMenu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  position: absolute;
+  top: 100%;
+  left: 0.5%;
+  width: 98%;
+  height: 0;
+  overflow: hidden;
+  background-color: var(--foreground);
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: height var(--animation-timing);
+  z-index: 999;
+  border-radius: 0px 0px 15px 15px;
+  border: solid 1.5px white;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.hamburgerMenu:has(input:checked) + .sidebar {
+  height: 40vh;
+}
+
+/* DECORATION */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.sidebar ul li {
+  color: white;
+  font-size: 3.4vh;
+  overflow: hidden;
+  margin: 0px;
+  font-family: "Afacad", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10px;
+  font-style: normal;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgb(211, 210, 210);
+}
+.sidebar ul li a:hover {
+  color: white;
+}
+.sidebar ul .spanStroke {
+  display: block;
+  height: 2px;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 0px auto;
+  opacity: 0.9;
+}
+
+/* FONT */
+/*
+        font-family: "Afacad", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 10px;
+        font-style: normal;
+*/
+@font-face {
+  font-family: "Noto Sans Thai Variable";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url(@fontsource-variable/noto-sans-thai/files/noto-sans-thai-latin-wght-normal.woff2) format("woff2-variations");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* FONT */
+/*    font-family: 'Noto Sans Thai Variable', sans-serif;
+/* FONT *//*# sourceMappingURL=rentCar.css.map */

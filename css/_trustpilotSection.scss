@@ -1,0 +1,258 @@
+.trustpilotSection {
+
+    background-color: $lightBlue;
+    padding-bottom: 20px;
+
+    h2,
+    .rating h3,
+    .logoTitle .trustpilotName{
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .gridContainer {
+        display: grid;
+
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 7vh 5vh;
+
+        grid-template-areas:
+            "title logo"
+            "rating rating";
+
+        column-gap: 20px;
+        row-gap: 0px;
+        align-items: center;
+    }
+
+    h2 {
+        grid-area: title;
+        margin: 5px 0px 0px 20px;
+        font-size: 24px;
+        line-height: 28px;
+        /*FONT*/
+        font-family: "Afacad", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        /* FONT*/
+        
+    }
+
+    .rating {
+        grid-area: rating;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 20px;
+        margin-bottom: 1vh;
+        
+        h3{
+            font-size: 1.2rem;
+            /*FONT*/
+            font-family: "Afacad", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 10px;
+            font-style: normal;
+            /* FONT*/
+        }
+    }
+
+    .logoTitle {
+        grid-area: logo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        margin-right: 2vw;
+        background-color: white;
+        border-radius: 18px;
+        padding: 0px 12px;
+        font-size: 0.9rem;
+        height: 5.5vh;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        margin-top: 5%;
+        
+        
+
+    img{
+        height: 3vh;
+    }    
+    .trustpilotName{
+        font-size: 1.1rem;
+        /*FONT*/
+        font-family: "Afacad", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 10px;
+        font-style: normal;
+        /* FONT*/
+    }
+        
+    }
+
+    .reviewSection{
+
+
+        .reviewAnimation{
+            display: flex;
+            gap: 3px;
+        }
+        display: flex;
+        gap: 5px;
+        margin: auto 7px;
+        
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; //** OKLART GANSKA USELESS _------------------------------------------------**//
+    
+        &::-webkit-scrollbar{
+                display: none;
+        }
+
+
+        .duplicate{
+            display: none;
+        }
+        .reviewContainer{
+            
+            background-color: $white;
+            height: auto;
+            padding: 5px;
+            border-radius: 15px;
+            margin-left: 5px;
+            padding-top: 2px;
+
+            flex: 0 0 50vw; //** justera widthen på obj som är inom scrollbar//
+            
+            scroll-snap-align: start;
+        
+            .gridReview{
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                grid-template-rows: 20px auto;
+                column-gap: 10px;
+                row-gap: 5px;
+
+                grid-template-areas:
+                    "pfp user logo"
+                    "pfp date logo";
+        
+                .pfpReview{
+                    grid-area: pfp;
+                    width: 45px;
+                    height: 45px;
+                    align-self: center;
+                    border-radius: 50px;
+                    margin-top: 5px;
+                }
+        
+                h4{
+                    grid-area: user;
+                    font-size: 1rem;
+                    align-self: start;
+                    justify-self: start;
+                    font-family: "Afacad", sans-serif;
+                    line-height: 1.1;
+
+                    min-width: 0;
+                    max-width: 120px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    
+                }
+        
+                p{
+                    grid-area: date;
+                    font-size: 0.9rem;
+                    align-self: start;
+                    justify-self: start; 
+                    font-family: "Afacad", sans-serif;
+                }
+        
+                .tpLogo{
+                    grid-area: logo;
+                    width: 40px;
+                    height: 40px;
+                    align-self: center;
+                    justify-self: end;
+                }
+            
+            }
+            .starRating{
+                width: 20vw;
+                margin-left: 8px;
+            }
+            .review{
+                margin: 8px;
+                font-family: "Afacad", sans-serif;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+}
+@media all and (min-width: 600px) {
+
+    .trustpilotSection{
+
+        .reviewSection{
+
+
+            .duplicate{
+                display: block;
+            }
+            .reviewContainer{
+
+                flex: 0 0 13vw;
+                padding: 1.2vw;
+
+                .starRating{
+                    width: 5vw;
+                }
+
+                .gridReview{
+
+
+                    .tpLogo{
+                        grid-area: logo;
+                        width: 40px;
+                        height: 40px;
+                        align-self: center;
+                        justify-self: end;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+    .logoTitle{
+        position: relative;
+        top: 10%;
+        right: -5%;
+    }
+
+.reviewSection {
+    overflow: hidden; // ta bort scroll på desktop
+
+    .reviewAnimation {
+        display: flex;
+        gap: 5px;
+        animation: scrollRight 30s linear infinite;
+    }
+}
+
+@keyframes scrollRight {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
+}
+
+
+
+
+

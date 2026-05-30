@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kollektion</title>
+    <link rel="icon" href="bilder/icon30w.png" type="image/png">
+    <link rel="stylesheet" href="css/collection.css">
+</head>
+<body>
+    <header>
+        <section class="topHeader">
+            <label class="hamburgerMenu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Information</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/collection.html">Kollektion</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Hjälp Center</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Om oss</a></li>
+                    <span class="spanStroke"></span>
+                </ul>
+            </aside>
+            <img src="bilder/logo400w.png" alt="">
+            <img src="bilder/profilelogo.png" alt="">
+        </section>
+        <div class="detail"></div>
+        
+    </header>
+
+    <script>
+        document.querySelector('.topHeader img:first-of-type').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script> <!-- lösning för att inte ändra logo term till a, vilket förstörde hela koden-->
+    <!-- HEADER     -->
+     <!-- COLLECTION --> 
+
+    <div class="imageTitle">
+        <h2>Vår breda kollektion av bilar</h2>
+    </div>
+
+    <section class="carsCollection">
+        <nav>
+            <img src="bilder/nissanCar2.png" alt="">
+            <h4>Nissan</h4>
+            <p>z360</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/orangeCar3.png" alt="">
+            <h4>Mercedes</h4>
+            <p>G wagon</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/bmwSedan.png" alt="">
+            <h4>Bmw</h4>
+            <p>competition</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/ferrariRed.png" alt="">
+            <h4>Ferrari</h4>
+            <p>F40</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/mercedesWhite.png" alt="">
+            <h4>Mercedes</h4>
+            <p>C63 AMG</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/gwagonRed.png" alt="">
+            <h4>Mercedes</h4>
+            <p>G wagon</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/sedanBlack.png" alt="">
+            <h4>Sedan</h4>
+            <p>in black</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+        <nav>
+            <img src="bilder/suvRed.png" alt="">
+            <h4>Ferrari</h4>
+            <p>Purosangue</p>
+            <button>Se tillgängliga tider →</button>
+        </nav>
+    </section>
+
+
+     <div class="smallSpace"></div>
+     <!-- COLLECTION END --> 
+    <!-- FOOTER -->
+    <footer>
+        <span class="footerDetail"></span>
+        <img class="logoFooter" src="bilder/icon140w.png" alt="">
+        <div class="trustPilotInfo">
+            <img src="bilder2/5trustpilotstars.png" class="5TPStarsFooter" alt="">
+            <h6>6.7k omdömen på</h6>
+            <img src="bilder2/trustpilotlogo.png" alt="">
+            <h6>Trustpilot</h6>
+        </div>
+
+        
+        <div class="footerLinks">
+            <nav class="FöretagLinks">
+                <h4>Företag</h4>
+                <p><a href="html/info.html">Om oss</a></p>
+                <p><a href="html/collection.html">Kollektion</a></p>
+                <p><a href="html/info.html">Medlemskap</a></p>
+                <p><a href="html/info.html">FAQ</a></p>
+            </nav>
+            <nav class="KundserviceLinks">
+                <h4>Kundservice</h4>
+                <p>Din bokning</p>
+                <p><a href="html/info.html">Hjälp Center</a></p>
+                <p>Garantier</p>
+            </nav>
+        </div>
+        <span class="seperateSpanFooter"></span>
+        <div class="extraLinksBottom">
+            <h4 class="titleOther">Annat</h4>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+            <p>Terms Of Conditions</p>
+        </div>
+        <span class="footerDetail2"></span>
+        <h6 class="copyRightText">© DriveLux 2026</h6>
+    </footer>
+
+    
+
+
+</body>
+</html>

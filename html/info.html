@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <link rel="icon" href="bilder/icon30w.png" type="image/png">
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <header>
+        <section class="topHeader">
+            <label class="hamburgerMenu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Information</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/collection.html">Kollektion</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Hjälp Center</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Om oss</a></li>
+                    <span class="spanStroke"></span>
+                </ul>
+            </aside>
+            <img src="bilder/logo400w.png" alt="">
+            <img src="bilder/profilelogo.png" alt="">
+        </section>
+        <div class="detail"></div>
+        
+    </header>
+
+    <script>
+        document.querySelector('.topHeader img:first-of-type').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script> <!-- lösning för att inte ändra logo term till a, vilket förstörde hela koden-->
+    <!-- HEADER     -->
+
+    <!-- INFO HTML --> 
+
+
+    <div class="pageLayout">
+        <div class="navigationButtons"> 
+            <nav onclick="scrollToSection('membership')"> <!-- inbyggd css funktion för att scrolla, stärks med html som smooth de-->
+                <img src="bilder/documentsImg.png" alt="">
+                <h4>Medlemskap</h4>
+            </nav>
+            <nav onclick="scrollToSection('information')">
+                <img src="bilder/identificationImg.png" alt="">
+                <h4>Upphämtning</h4>
+            </nav>
+            <nav onclick="scrollToSection('FAQ')">
+                <img src="bilder/documentsImg.png" alt="">
+                <h4>FAQ</h4>
+            </nav>
+            <nav onclick="scrollToSection('contact')"> 
+                <img src="bilder/contactImg.png" alt="">
+                <h4>Kontakt</h4>
+            </nav>
+        </div>
+
+        <div class="mainContent">
+            <article class="membership" id="membership">
+                <h2>Medlemskap</h2>
+                <ul>
+                    <li>Prioriterad tillgång till premium bilar</li>
+                    <li>Spara upp till 30% vid bokning</li>
+                    <li>Personlig support</li>
+                </ul>
+                <p>För 429 kr/månaden</p>
+                <button class="buyMembership">Köp medlemskap</button>
+                <nav class="imageDetail"></nav>
+            </article>
+
+            <section class="infoBoxes">
+                <div class="info" id="information">
+                    <h2>Upphämtning</h2>
+                    <section class="infoBody">
+                        <section class="textContent">
+                            <nav class="imgContainer">
+                                <img src="bilder/identificationImg.png" alt="">
+                                <img src="bilder/cardImg.png" alt="">
+                                <img src="bilder/documentsImg.png" alt="">
+                            </nav>
+                            <p>För att hämta ut bilen behöver du ha med dig giltigt körkort (minst 1 år), legitimation och ett betal- eller kreditkort. Ta också med ditt boknings-ID. Vid utlandshyra krävs oftast pass.</p>
+                            <p>Du måste vanligtvis vara minst 21 år (ibland 18). Förare under 25 kan få en extra avgift.</p>
+                            <p>Många stationer accepterar även debitkort, men kontrollera alltid betalvillkoren innan du bokar.</p>
+                            <p>Du kan ändra eller avboka din bokning kostnadsfritt fram till 48 timmar före upphämtning.</p>
+                        </section>
+                        <section class="infoImage"></section>
+                    </section>
+                </div>
+                <div class="FAQ" id="FAQ">
+                    <h2>FAQ</h2>
+                    <section class="FAQBody">
+                        <section class="FAQImage"></section>
+                        <section class="FAQContent">
+                            <h4>Vad behöver jag för att hyra bil?</h4>
+                            <p>Giltigt körkort (minst 1 år), legitimation och betal-/kreditkort. Ta även med ditt boknings-ID. Vid utlands­hyra behövs ofta pass.</p>
+                            <h4>Vilken ålder gäller?</h4>
+                            <p>Oftast minst 21 år (ibland 18). Förare under 25 kan få en extra avgift.</p>
+                            <h4>Kan jag hyra utan kreditkort?</h4>
+                            <p>Ja, många accepterar debitkort (Visa/Mastercard). Kolla betalvillkoren först.</p>
+                            <h4>Vad händer om mina planer ändras?</h4>
+                            <p>Du kan ändra eller avboka gratis fram till 48 timmar före upphämtning.</p>
+                        </section>
+                    </section>
+                </div>
+            </section>
+
+            
+
+            <script> // gör så scrollingen blir smooth
+                function scrollToSection(id) {
+                    document.getElementById(id).scrollIntoView({
+                        behavior: 'smooth' 
+                    });
+                }
+            </script>
+
+
+
+            <div class="bottomSpacer"></div>
+        </div>
+    </div>
+
+    <nav class="contactWindow" id="contact">
+            <h2>Hittar du inget svar?</h2>
+            <button class="contactButton">Kontakta oss</button>
+            <img src="bilder2/supportIcon.png" alt="support ikon">
+    </nav>
+    <div class="contactBox" id="contactBox" style="display: none;">
+        <div class="box">
+            <section class="contactInfo">
+                <nav class="infoBox">
+                    <h3>Chatta med oss</h3>
+                    <p>I chatten kan du få hjälp med frågor rörande din bokning, medlemskap och andra ärenden - <b>dygnet runt</b></p>
+                    
+                    <button class="contactFutherButton">Till Chatten</button>
+                </nav>
+                <nav class="infoBox">
+                    <h3>Ring</h3>
+                    <p>Öppetider:</p>
+                    <div class="infoSeparator">
+                        <p>Måndag-Fredagar: <br> Helgdagar:</p>
+                        <h4>9-18 <br> Stängt</h4>
+                    </div>
+                    <button class="contactFutherButton">076-444 00 00</button>
+                </nav>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const contactBox = document.getElementById('contactBox');
+        const contactButton = document.querySelector('.contactButton');
+
+        function toggleContact(){
+            if(contactBox.style.display === 'none'){
+                contactBox.style.display = 'block';
+                contactButton.textContent = 'Göm';
+            }else{
+                contactBox.style.display = 'none';
+                contactButton.textContent = 'Kontakta oss';
+            }
+        }
+
+        contactButton.onclick = toggleContact;
+    </script>
+
+    <div class="emptySpace"></div>
+
+    <!-- INFO HTML --> 
+
+    <!-- FOOTER -->
+    <footer>
+        <span class="footerDetail"></span>
+        <img class="logoFooter" src="bilder/icon140w.png" alt="">
+        <div class="trustPilotInfo">
+            <img src="bilder2/5trustpilotstars.png" class="5TPStarsFooter" alt="">
+            <h6>6.7k omdömen på</h6>
+            <img src="bilder2/trustpilotlogo.png" alt="">
+            <h6>Trustpilot</h6>
+        </div>
+
+        
+        <div class="footerLinks">
+            <nav class="FöretagLinks">
+                <h4>Företag</h4>
+                <p><a href="html/info.html">Om oss</a></p>
+                <p><a href="html/collection.html">Kollektion</a></p>
+                <p><a href="html/info.html">Medlemskap</a></p>
+                <p><a href="html/info.html">FAQ</a></p>
+            </nav>
+            <nav class="KundserviceLinks">
+                <h4>Kundservice</h4>
+                <p>Din bokning</p>
+                <p><a href="html/info.html">Hjälp Center</a></p>
+                <p>Garantier</p>
+            </nav>
+        </div>
+        <span class="seperateSpanFooter"></span>
+        <div class="extraLinksBottom">
+            <h4 class="titleOther">Annat</h4>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+            <p>Terms Of Conditions</p>
+        </div>
+        <span class="footerDetail2"></span>
+        <h6 class="copyRightText">© DriveLux 2026</h6>
+    </footer>
+
+    
+
+</body>
+</html>

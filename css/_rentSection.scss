@@ -1,0 +1,558 @@
+
+body{
+    
+    font-family: "Afacad", sans-serif;
+    
+}
+
+.carPreview{
+
+    .leftButton{
+        display: none;
+    }
+    .rightButton{
+        display: none;
+    }
+
+    .carPreviewImages{
+
+        
+        display: flex;
+        gap: 5px;
+        height: 25vh;
+        margin: 10px 0px 7px 5px;
+
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; //** OKLART GANSKA USELESS _------------------------------------------------**//
+        
+        &::-webkit-scrollbar{
+                display: none;
+        }
+        
+        img{
+            border-radius: 15px;
+
+            flex: 0 0 30%;
+            scroll-snap-align: start;
+        }
+
+    }
+}
+
+.imgSeperate{
+    display: block;
+    height: 3px;
+    width: 95%;
+    margin: auto;
+    background-color: $darkerGray;
+    border-radius: 25px;
+    
+}
+
+.carTitle{
+
+    margin: 10px 0px 10px 10px;
+
+
+    .brandAndType{
+
+        display: flex;
+        h2{
+
+        font-size: 1.8rem;
+        
+        margin: 0;
+    }
+        h4{
+            margin: 0 0 0 10px;
+            font-size: 1.4rem;
+            margin-top: 5px;
+            border: 1px black solid;
+            border-radius: 20px;
+            height: 70%;
+            padding: 0px 4px 0px 5px;
+            line-height: 1.25;
+
+        }
+
+    }
+
+    h3{
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+.bookSection{
+    background-color: $lightBlue;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    border: solid $grayText 1px;
+    border-radius: 15px;
+    position: relative;
+
+    .titleChangeButton{
+        margin: auto;
+        display: flex;
+        
+
+        h2{
+            font-size: 1.3rem;
+        }
+        button{
+
+        position: absolute;
+        top: 2.5%;
+        right: 3%;
+        
+        height: 3.5vh;
+        border-radius: 25px;
+        background-color: $ogreen;
+        color: $white;
+        
+        padding: 6px;
+        font-size: 14px;
+        border-color: $white;
+
+        font-family: "Afacad", sans-serif;
+        line-height: 1;
+        font-size: 1rem;
+        }
+    }
+
+    .seperateDetail{
+        display: block;
+        height: 2px;
+        width: 95%;
+        margin: auto;
+        background-color: $gray;
+        border-radius: 25px;
+    }
+
+    .seperateSpan{
+        background-color: $gray;
+        height: 2px;
+        width: 100%;
+        border-radius: 25px;
+        display: block;
+        margin-top: 5px;
+    }
+
+    nav{
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0);
+        width: 90%;
+        height: auto;
+
+        margin-top: 10px;
+        padding: 0px;
+
+        display: flex;
+        flex-direction: column;
+       
+        
+
+        h3{
+            background-color: rgba(255, 255, 255, 0);
+            
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 0px;
+            margin-top: 8px;
+            
+            
+        }
+
+        
+        .infoImgSpacer{
+            display: flex;
+            justify-content: space-between;
+
+
+            p{
+                font-size: 1.2rem;
+                
+                margin: auto auto auto 5px;
+                
+            }
+            
+            
+            img{
+                
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+
+    .detailedPriceTags{
+
+        
+        
+        
+        div{
+            width: 95%;
+            margin: auto;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            h4{
+
+                
+                
+                font-weight: bold;
+                font-size: 1.2rem;
+                margin-bottom: 0px;
+                margin-top: 8px;
+            }
+
+            
+        }
+        
+        div{
+
+            h5{
+                
+                font-weight: bold;
+                font-size: 1.1rem;
+                height: 0.5vh;
+                margin-top: 8px;
+            }
+        
+        }
+        
+                
+    
+    }
+    h6{
+        
+        font-weight: 400;
+        font-size: 1rem;
+        text-align: center;
+        margin: auto;
+        margin-top: 0;
+        color: $darkerGray;
+    }
+    
+}
+
+.carInformationSection{
+
+    
+
+    .titleTags{
+
+        display: flex;
+        width: 75%;
+        margin: auto;
+        flex-wrap: wrap;
+        
+
+        nav{
+
+            width: 42%;
+            margin-left: 5vw;
+            
+
+            h3{
+                
+                
+                font-size: 1.5rem;
+                margin: 18px 0px 0px 0px;
+            
+            }
+            p{
+                
+                font-size: 1.3rem;
+                margin: 0px;
+            }
+
+        }
+    }
+}
+
+.rentInformation{
+
+    
+    width: 90%;
+    margin: 30px auto auto auto;
+
+    nav{
+
+        
+        display: flex;
+        justify-content: space-between;
+        
+        h4{
+            margin: 0px;
+            
+            font-size: 25px;
+        }
+        img{
+
+            height: 30px;
+            width: 30px;
+            
+        }
+        
+    }
+
+    .seperateSpan{
+        background-color: $gray;
+        height: 2px;
+        width: 95%;
+        border-radius: 25px;
+        display: block;
+        margin: 5px auto auto auto;
+        
+    }
+
+    .rentDetails{
+        
+        
+        .gridParent{
+            display: grid;
+            grid-template-columns: auto 75vw auto;
+            grid-template-rows: 50% 50%;
+            column-gap: 0px;
+            row-gap: 5px;
+            height: 100px;
+            margin-top: 10px;
+
+            grid-template-areas:
+            "img title"
+            "detail info";
+
+            img{
+                grid-area: img;
+                height: 30px;
+                width: 30px;
+                margin-top: 3vh;
+            }
+            h3{
+                grid-area: title;
+                font-size: 1.6rem;
+                line-height: 1.2;
+                
+            }
+            .verticalSpan{
+                grid-area: detail;
+                background-color: $gray;
+                height: 7vh;
+                width: 2px;
+                border-radius: 25px;
+                display: block;
+                margin: 5px auto auto auto;
+
+            }
+            p{
+                grid-area: info;
+                font-size: 1.3rem;
+                line-height: 1;
+                
+
+            }
+        }
+    }
+}
+
+
+.bookRentButton{
+
+    height: 7vh;
+    
+
+    background-color: $white;
+    button{
+        
+        margin: auto;
+        margin-top: 40px;
+        display: block;
+        
+        
+        height: auto;
+        border-radius: 25px;
+        background-color: $ogreen;
+        color: $white;
+        
+        padding: 8px 35px;
+        font-size: 1.6rem;
+        border-color: $white;
+        font-family: "Afacad", sans-serif;
+        
+
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+@media all and (min-width: 600px){
+
+
+.carPreview{
+
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    .leftButton, .rightButton {
+        position: absolute;
+        top: 45%;
+        
+        background: rgba(255, 255, 255, 0.705);
+        color: $white;
+        border: 2px $ogreen solid;
+        outline: 2.5px $white solid;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        font-size: 2rem;
+        font-family: "Afacad", sans-serif;
+        line-height: 1;
+        cursor: pointer;
+        z-index: 10;
+        display: block;
+
+        img{
+            height: 25px;
+            width: auto;
+        }
+    }
+
+    .leftButton{
+        left: 2%;
+        img{
+            position: absolute;
+            left: 14%;
+            top: 16%;
+        }
+    }
+    .rightButton{
+        right: 2%;
+        img{
+            rotate: 180deg;
+            position: absolute;
+            right: 12%;
+            top: 14%;
+        }
+    }
+
+
+    .carPreviewImages{
+        scroll-behavior: smooth;
+        height: 40vh;
+        margin: 10px 0px 7px 10px;
+
+        img{
+            flex: 0 0 20%;
+            object-fit: cover;
+        }
+    }
+
+}
+
+    .carTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        
+        margin: 10px 0px 10px 20px;
+
+        h2{ 
+            font-size: 2rem; 
+        }
+        h3{ 
+            font-size: 1.4rem; 
+        }
+    }
+
+    .pageLayout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title  tags"
+            "book   info"
+            "book   info";
+        gap: 20px;
+        width: 90%;
+        margin: auto;
+    }
+
+    .carTitle{ 
+        grid-area: title;
+    }
+    
+    .carInformationSection{
+        grid-area: tags;
+        
+        .titleTags{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 1vh;
+            margin-left: 5vw;
+
+            justify-content: flex-start;
+            gap: 60px;
+
+            nav{
+                width: auto;
+                margin: 0;
+
+                h3{ 
+                    font-size: 1.6rem; 
+                    margin: 10px 0px 0px 0px; 
+                }
+                p{ 
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .bookSection{
+        grid-area: book;
+        height: auto;
+        width: 100%;
+        margin: 0;
+
+        h6{
+            margin-bottom: 1vh;
+        }
+    }
+
+    .rentInformation{
+        grid-area: info;
+        width: 100%;
+        margin: 0;
+
+        .rentDetails{
+            .gridParent{
+                grid-template-columns: auto 1fr;
+
+                h3{
+                    line-height: 1.3;
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+
+    .bookRentButton{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+
+        button{
+            margin: 0;
+        }
+    }
+}
+
+

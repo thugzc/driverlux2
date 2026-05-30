@@ -1,0 +1,359 @@
+
+
+
+
+.h3important{
+    /*FONT*/
+    font-family: "Afacad", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    /* FONT*/
+    font-size: 1.4rem;
+    margin-top: 10px;
+    justify-content: start;
+    margin-left: 14px;
+    margin-bottom: 4px;
+}
+
+.flexContainer{
+
+    display: flex;
+    justify-content: space-around;
+
+    .seperateSpan{
+        display: none;
+        
+    }
+
+    nav{
+
+        cursor: pointer;
+
+        .infoText{
+            display: none;
+        }
+
+        img{
+            /**/
+            
+        }
+        
+        h5{
+            /*FONT*/
+            font-family: "Afacad", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 10px;
+            font-style: normal;
+            /* FONT*/
+            text-align: center;
+            font-size: 1.15rem;
+            margin: 0;
+            margin-top: -1vh;
+            
+        }
+
+        p{
+            /*FONT*/
+            font-family: "Afacad", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 550;
+            font-style: normal;
+            /* FONT*/
+            text-align: center;
+            margin: 0px;
+            font-size: 1rem;
+            color: $darkerGray;
+        }
+        p:hover{
+            color: black;
+        }
+    }
+}
+
+//** MEMBER AD **//
+//** MEMBER AD **//
+
+
+.memberAd{
+
+
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+
+    .memberH3{
+        text-align: center;
+        justify-content: center;
+        font-size: 1.6rem;
+        /*FONT*/
+        font-family: "Afacad", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 50;
+        font-style: normal;
+        /* FONT*/
+        padding: 18px;
+        background-color: $deepblue;
+        color: $white;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    background-image: url("/bilder2/memberSuvCar.png");
+
+    .memberMoreButton{
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50px;
+        text-align: center;
+        
+        border-radius: 30px;
+        background-color: $ogreen;
+        color: $white;
+        
+        
+        font-size: 1.3rem;
+        border-color: $white;
+        border: 1.3px white solid;
+        /*FONT*/
+        font-family: "Afacad", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 250;
+        font-style: normal;
+        /* FONT*/
+        width: 52vw;
+        text-decoration: none;
+        line-height: 2.2;
+
+        a{
+            color: $white;
+            
+            
+        }
+    }
+
+    .memberContainer{
+
+
+        ul{
+            li{
+                display: none;
+            }
+        }
+        p{
+            display: none;
+        }
+    }
+}
+
+
+
+
+@media all and (min-width: 600px) {
+
+
+    .h3important{
+       
+        font-size: 1.4rem;
+        margin-top: 20px;
+        justify-content: start;
+        margin-left: 20px;
+        margin-bottom: 3vh;
+    }
+        .flexContainer{
+
+            
+            display: flex;
+            flex-direction: row;
+            gap: 2vw;
+            
+            justify-content: center;
+
+            .seperateSpan{
+                background-color: $darkerGray;
+                width: 2px;
+                height: 15vh;
+                display: inline-block;
+                border-radius: 50px;
+                color: rgba(255, 255, 255, 0);
+                
+            }
+    
+            width: 80vw;
+            margin: auto;
+            nav{
+                display: grid;
+                grid-template-columns: 7vw 20vw;
+                grid-template-rows: auto auto;
+                grid-template-areas:
+                    "img title"
+                    "img text"
+                    "img more";
+    
+                gap: 12px;
+                align-items: start;
+            
+    
+                img{
+                    grid-area: img;
+                    width: 7vw;
+                    height: auto;
+                    
+                }
+        
+                h5{
+                    grid-area: title;
+                    margin: 0;
+                    text-align: left;
+                }
+                p{
+                    grid-area: more;
+                }
+        
+                .infoText{
+                    display: block;
+                    grid-area: text;
+                    margin: 0;
+                    font-size: 0.95rem;
+                    color: $darkerGray;
+                }
+            }
+    
+        }
+
+
+
+
+
+//** MEMBER AD **//
+//** MEMBER AD **//
+
+
+.memberAd{
+
+    margin-top: 5vh;
+    position: relative;
+    height: 45vh;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: none;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "info image";
+    border-radius: 25px 0px 0px 0px;
+
+
+    .memberContainer{
+        background-color: $deepblue;
+        border-radius: 25px 0px 0px 0px;
+
+        grid-area: info;
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 15vh 15vh;
+        grid-template-areas:
+            "title"
+            "text"
+            "price";
+
+        height: 100%;
+        
+        color: white;
+
+
+        .memberH3{
+            grid-area: title;
+            margin-top: 3vh;
+            font-size: 2rem;
+            height: 12vh;
+            
+        }
+
+        .textList{
+            grid-area: text;
+            list-style:circle;
+            margin: auto;
+            font-size: 1.5rem;
+            font-family: "Afacad", sans-serif;
+            font-weight: 400;
+
+            li{
+                display: list-item; //behövdes för att kunna behålla list style, annars blev det ingenting funka inte heller med block eller inline---
+                
+                
+            }
+
+            
+            
+        }
+
+        p{
+            grid-area: price;
+            margin-left: 2vw;
+            margin-top: 8vh;
+            font-weight: 600;
+            font-size: 1rem;
+            font-family: "Afacad", sans-serif;
+            font-weight: 400;
+            display: block;
+            
+            
+        }
+    }
+
+
+    .memberImage{
+        grid-area: image;
+        border-radius: 0px 25px 0px 0px;
+
+        background-image: url("/bilder2/memberSuvCar.png");
+        background-size: cover;
+        background-position: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .memberMoreButton{
+
+        position: absolute;
+        bottom: 3%;
+        left: 87%;
+        
+        
+    
+        height: 5.2vh;
+        border: 1.3px white solid;
+    
+        border-radius: 50px;
+        width: 20vw;
+    
+        background-color: $ogreen;
+        color: $white;
+    
+        font-size: 1.4rem;
+        
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        text-decoration: none;
+    }
+}
+
+
+    
+}
+
+

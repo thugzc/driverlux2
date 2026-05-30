@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bokning</title>
+    <link rel="icon" href="bilder/icon30w.png" type="image/png">
+    <link rel="stylesheet" href="css/rentCar.css">
+</head>
+<body>
+    
+    <header>
+        <section class="topHeader">
+            <label class="hamburgerMenu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Information</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/collection.html">Kollektion</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Hjälp Center</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Om oss</a></li>
+                    <span class="spanStroke"></span>
+                </ul>
+            </aside>
+            <img src="bilder/logo400w.png" alt="">
+            <img src="bilder/profilelogo.png" alt="">
+        </section>
+        <div class="detail"></div>
+        
+    </header>
+
+    <script>
+        document.querySelector('.topHeader img:first-of-type').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script> <!-- lösning för att inte ändra logo term till a, vilket förstörde hela koden-->
+    <!-- HEADER     -->
+
+    <div class="carPreview">
+        <button class="leftButton"><img src="bilder/leftArrow96w.png" alt=""></button>
+        <div class="carPreviewImages">
+        <img src="bilder/rentGraySuvJPEG.jpg" alt="">
+        <img src="bilder/rentHyundaiFrontInterorJPEG.jpg" alt="">
+        <img src="bilder/rentHyundaiBackInterorJPEG.jpg" alt="">
+        <img src="bilder/rentHyundaiSideJPEG.jpg" alt="">
+        <img src="bilder/rentHyundaiBackJPEG.jpg" alt="">
+        </div>
+        <button class="rightButton"><img src="bilder/leftArrow96w.png" alt=""></button>
+    </div>
+
+    <script>
+        const preview = document.querySelector('.carPreviewImages');
+        const images = preview.querySelectorAll('img');
+        let current = 0;
+
+        function goLeft(){
+            if (current > 0) current--;
+            preview.scrollLeft = images[current].offsetLeft;
+        }
+
+        function goRight(){
+            if (current < images.length - 1) current++;
+            preview.scrollLeft = images[current].offsetLeft;
+        }
+
+        document.querySelector('.leftButton').onclick = goLeft;
+        document.querySelector('.rightButton').onclick = goRight;
+
+    </script>
+
+    <span class="imgSeperate"></span>
+
+    <section class="pageLayout">
+        <nav class="carTitle">
+            <div class="brandAndType">
+            <h2>Hyundai</h2>
+            <h4>SUV</h4>
+            </div>
+            <h3>Tucson</h3>
+        </nav>
+
+        <section class="bookSection">
+            <nav class="titleChangeButton">
+                <h2>Bokningsdetaljer</h2>
+                <button>Ändra datum/tid</button>
+            </nav>
+            <span class="seperateDetail"></span>
+            <nav>
+                <h3>Hämta</h3>
+                    <div class="infoImgSpacer">
+                        <p>15:00</p>
+                        <img src="bilder/iconLocation48w.png" alt="">
+                    </div>
+            </nav>
+            <nav>
+                <h3>Återlämning</h3>
+                    <div class="infoImgSpacer">
+                        <p>18:00</p>
+                        <img src="bilder/iconLocation48w.png" alt="">
+                    </div>
+            </nav>
+            <span class="seperateSpan"></span>
+            <nav>
+                <h3>Datum</h3>
+                    <div class="infoImgSpacer">
+                        <p>12-03-2026 → 14-03-2026</p>
+                        <img src="bilder/iconCalendar48w.png" alt="">
+                    </div>
+            </nav>
+            <span class="seperateSpan"></span>
+            <nav class="detailedPriceTags">
+                <h3>Detaljerat Pris</h3>
+                <div>
+                    <h4>Hyrpris</h4>
+                    <h4>1 199 kr</h4>
+                </div>
+                <span class="seperateSpan"></span>
+                <div>
+                    <h4>Extra</h4>
+                    <h4>0 kr</h4>
+                </div>
+                <span class="seperateSpan"></span>
+                <div>
+                    <h5>Total Pris</h5>
+                    <h5>1 199 kr</h5>
+            </div>
+            </nav>
+            <h6>Fri avbokning innan 10-03-2026</h6>
+        </section>
+
+        <section class="carInformationSection">
+            <div class="titleTags">
+                <nav>
+                    <h3>Diesel</h3>
+                    <p>Bränsle</p>
+                </nav>
+                <nav>
+                    <h3>265 hk</h3>
+                    <p>Effekt</p>
+                </nav>
+                <nav>
+                    <h3>7.0 L/100 km</h3>
+                    <p>Förbrukning</p>
+                </nav>
+                <nav>
+                    <h3>Automat</h3>
+                    <p>Växellåda</p>
+                </nav>
+            </div>
+        </section>
+
+        <section class="rentInformation">
+                <nav>
+                    <h4>Info</h4>
+                    <img src="bilder/iconCalendar48w.png" alt="">
+                </nav>
+                <span class="seperateSpan"></span>
+                
+                <div class="rentDetails">
+                    <nav class="gridParent">
+                        <img src="bilder/iconCalendar48w.png" alt="">
+                        <h3>Reservering</h3>
+                        <span class="verticalSpan"></span>
+                        <p>Vi reserverar din bil, bokning</p>
+                    </nav>
+                    <nav class="gridParent">
+                        <img src="bilder/iconCalendar48w.png" alt="">
+                        <h3>Detailjer</h3>
+                        <span class="verticalSpan"></span>
+                        <p>Vi behöver ditt id vid hämtning</p>
+                    </nav>
+                    <nav class="gridParent">
+                        <img src="bilder/iconCalendar48w.png" alt="">
+                        <h3>Hämta bil</h3>
+                        <span class="verticalSpan"></span>
+                        <p>Hämta bil vid bestämd tid</p>
+                    </nav>
+                </div>
+        </section>
+
+    </section>
+        <div class="bookRentButton">
+            <button>Boka nu</button>
+        </div>
+    
+
+
+
+         <!-- FOOTER -->
+    <footer>
+        <span class="footerDetail"></span>
+        <img class="logoFooter" src="bilder/icon140w.png" alt="">
+        <div class="trustPilotInfo">
+            <img src="bilder2/5trustpilotstars.png" class="5TPStarsFooter" alt="">
+            <h6>6.7k omdömen på</h6>
+            <img src="bilder2/trustpilotlogo.png" alt="">
+            <h6>Trustpilot</h6>
+        </div>
+
+        
+        <div class="footerLinks">
+            <nav class="FöretagLinks">
+                <h4>Företag</h4>
+                <p><a href="html/info.html">Om oss</a></p>
+                <p><a href="html/collection.html">Kollektion</a></p>
+                <p><a href="html/info.html">Medlemskap</a></p>
+                <p><a href="html/info.html">FAQ</a></p>
+            </nav>
+            <nav class="KundserviceLinks">
+                <h4>Kundservice</h4>
+                <p>Din bokning</p>
+                <p><a href="html/info.html">Hjälp Center</a></p>
+                <p>Garantier</p>
+            </nav>
+        </div>
+        <span class="seperateSpanFooter"></span>
+        <div class="extraLinksBottom">
+            <h4 class="titleOther">Annat</h4>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+            <p>Terms Of Conditions</p>
+        </div>
+        <span class="footerDetail2"></span>
+        <h6 class="copyRightText">© DriveLux 2026</h6>
+    </footer>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+footer {
+    background-color: $deepblue;
+    
+    position: relative;
+
+    .logoFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+        color: $white;
+
+        height: 5vh;
+        width: auto;
+
+        
+    }
+
+    .footerDetail {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $ogreen;
+    }
+
+    .trustPilotInfo {
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        margin-top: 0px;
+        color: $white;
+        height: 4vh;
+
+        position: absolute;
+        right: 2%;
+        top: 2%;
+        
+        
+
+        img{
+            height: 2.5vh;
+            width: auto;
+        }
+        h6{
+            
+            /* FONT */
+            
+            font-family: "Afacad", sans-serif;
+            /* FONT */
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+
+
+    .footerLinks {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        color: $white;
+
+        nav{
+            h4{
+                margin: 8px;
+                font-size: 1.6rem;
+                /* FONT */
+                font-family: "Afacad", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 10px;
+                font-style: normal;
+                /* FONT */
+
+            }
+
+            p{
+
+                /* FONT */
+                font-family: "Afacad", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 10px;
+                font-style: normal;
+                /* FONT */
+
+                font-size: 1.2rem;
+                color: $grayText;
+                
+
+                a{
+                    text-decoration: none;
+                    color: $grayText;
+                }
+
+                a:hover{
+                    color: $white;
+                }
+            }
+            p:hover{
+                color: $white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .seperateSpanFooter {
+        display: block;
+        height: 2px;
+        width: 80%;
+        background-color: white;
+        margin: auto;
+    }
+
+    .extraLinksBottom {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        color: $white;
+        height: 5vh;
+
+        p{
+            /* FONT */
+            font-family: "Afacad", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 10px;
+            font-style: normal;
+            /* FONT */
+
+            font-size: 18px;
+            color: $grayText;
+            
+            
+        }
+        p:hover{
+            color: $white;
+            cursor: pointer;
+        }
+
+    }
+
+    .footerDetail2 {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $ogreen;
+        margin-top: 10px;
+    }
+
+    .copyRightText {
+        text-align: left;
+        margin: 0px;
+        font-size: 16px;
+        padding: 6px;
+
+        background-color: $lightBlue;
+        color: $deepblue;
+
+        /* FONT */
+        font-family: "Afacad", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 10px;
+        font-style: normal;
+        /* FONT */
+    }
+}
+
+.titleOther{
+    display: none;
+}
+
+
+@media all and (min-width: 600px) {
+
+    footer{
+    
+        .seperateSpanFooter{
+            display: none;
+        }
+    
+        .footerLinks{
+    
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+    
+            width: 80%;
+            margin: auto;
+    
+            align-items: start;
+            text-align: center;
+    
+            nav{
+    
+                width: 100%;
+            }
+        }
+    
+        .extraLinksBottom{
+    
+            position: absolute;
+    
+            top: 42%;
+            right: 10%;
+    
+            transform: translateY(-50%);
+    
+            width: 26.6%;
+    
+            display: flex;
+            flex-direction: column;
+    
+            justify-content: flex-start;
+            align-items: center;
+    
+            text-align: center;
+    
+            gap: 0;
+    
+            height: auto;
+    
+            h4{
+    
+                margin: 8px;
+    
+                font-size: 1.6rem;
+    
+                font-family: "Afacad", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 10px;
+                font-style: normal;
+    
+                color: $white;
+            }
+    
+            p{
+    
+                margin: 8px;
+    
+                font-size: 1.2rem;
+    
+                color: $grayText;
+    
+                font-family: "Afacad", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 10px;
+                font-style: normal;
+            }
+    
+            p:hover{
+                color: $white;
+                cursor: pointer;
+            }
+        }
+
+        .titleOther{
+            display: block;
+        }
+    }
+    }

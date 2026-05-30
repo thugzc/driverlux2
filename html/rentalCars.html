@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyrbilar</title>
+    <link rel="icon" href="bilder/icon30w.png" type="image/png">
+    <link rel="stylesheet" href="css/rentalCars.css">
+</head>
+<body>
+    
+    <header>
+        <section class="topHeader">
+            <label class="hamburgerMenu">
+                <input type="checkbox">
+            </label>
+            <aside class="sidebar">
+                <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Information</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/collection.html">Kollektion</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Hjälp Center</a></li>
+                    <span class="spanStroke"></span>
+                    <li><a href="html/info.html">Om oss</a></li>
+                    <span class="spanStroke"></span>
+                </ul>
+            </aside>
+            <img src="bilder/logo400w.png" alt="">
+            <img src="bilder/profilelogo.png" alt="">
+        </section>
+        <div class="detail"></div>
+        
+    </header>
+
+    <script>
+        document.querySelector('.topHeader img:first-of-type').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        });
+    </script> <!-- lösning för att inte ändra logo term till a, vilket förstörde hela koden-->
+    <!-- HEADER     -->
+
+    <section class="rentSearchSection">
+        <div class="rentWindow">
+            <nav class="input1">
+                    <div class="titleImgSpacer">
+                        <p>Hämta</p>
+                        <img src="bilder/iconLocation48w.png" alt="">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Välj..">
+            </nav>
+            <span class="seperateSpan2"></span>
+            <nav class="input2">
+               
+                    <div class="titleImgSpacer">
+                         <p>Återlämning</p>
+                        <img src="bilder/iconLocation48w.png" alt="">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Välj..">
+            </nav>
+            <span class="seperateSpan"></span>
+            <nav class="input3">
+                
+                    <div class="titleImgSpacer">
+                        <p>Datum</p>
+                        <img src="bilder/iconCalendar48w.png" alt="">
+                    </div>
+                    <input type="text" name="" id="" placeholder="Välj..">
+            </nav>
+            <button class="searchButton"><a href="html/rentalCars.html" class="searchButton">Sök bilar →</a></button>
+        </div>
+
+        <div class="optionsContainer">
+            <nav>
+                <img src="bilder/sedanCar.png" alt="">
+                <h3>Sedan</h3>
+            </nav>
+            <nav>
+                <img src="bilder/suvCar.png" alt="">
+                <h3>SUV</h3>
+            </nav>
+            <nav>
+                <img src="bilder/coupeCar.png" alt="">
+                <h3>Sports</h3>
+            </nav>
+            <nav>
+                <img src="bilder/convertibleCar.png" alt="">
+                <h3>Super Car</h3>
+            </nav>
+            <nav>
+                <img src="bilder/hatchbackCar.png" alt="">
+                <h3>Hatchback</h3>
+            </nav>
+            <nav>
+                <img src="bilder/minivanCar.png" alt="">
+                <h3>Minivan</h3>
+            </nav>
+        </div>
+
+    </section>
+
+    <section class="rentalCarsContainer">
+        <nav>
+            <h5>SUV</h5>
+            <img src="bilder/rentGraySuvJPEG.jpg" alt="">
+            <h4>Hyundai</h4>
+            <p>Tucson</p>
+            <h3>1 199:-</h3>
+            <button><a href="html/rentCar.html">Boka →</a></button>
+        </nav>
+        <nav>
+            <h5>SUV</h5>
+            <img src="bilder/rentOrangeSuvJPEG.jpg" alt="">
+            <h4>Mercedes</h4>
+            <p>G wagon</p>
+            <h3>3 899:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>Sport</h5>
+            <img src="bilder/rentSportBmwJPEG.jpg" alt="">
+            <h4>Bmw</h4>
+            <p>m2 competition</p>
+            <h3>2 999:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>Sport</h5>
+            <img src="bilder/rentRedFerrariJPEG.jpg" alt="">
+            <h4>Ferrari</h4>
+            <p>F40</p>
+            <h3>9 999:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>Sedan</h5>
+            <img src="bilder/rentWhiteMercedesJPEG.jpg" alt="">
+            <h4>Mercedes</h4>
+            <p>C63 AMG</p>
+            <h3>2 799:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>SUV</h5>
+            <img src="bilder/rentRedSuvJPEG.jpg" alt="">
+            <h4>Mercedes</h4>
+            <p>G wagon</p>
+            <h3>3 999:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>Sedan</h5>
+            <img src="bilder/rentBlackSedanJPEG.jpg" alt="">
+            <h4>Aston Martin</h4>
+            <p>Rapide S</p>
+            <h3>2 299:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>SUV</h5>
+            <img src="bilder/rentFerrariSuvJPEG.jpg" alt="">
+            <h4>Ferrari</h4>
+            <p>Purosangue</p>
+            <h3>7 499:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>SUV</h5>
+            <img src="bilder/rentElectricJPEG.jpg" alt="">
+            <h4>Aston Martin</h4>
+            <p>Lagonda</p>
+            <h3>6 999:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>SUV</h5>
+            <img src="bilder/rentKiaJPEG.jpg" alt="">
+            <h4>KIA</h4>
+            <p>EV9</p>
+            <h3>2 499:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>Hatchback</h5>
+            <img src="bilder/rentRedMazdaJPEG.jpg" alt="">
+            <h4>Mazda</h4>
+            <p>3</p>
+            <h3>1 399:-</h3>
+            <button>Boka →</button>
+        </nav>
+        <nav>
+            <h5>Sedan</h5>
+            <img src="bilder/rentWhiteBmwJPEG.jpg" alt="">
+            <h4>BMW</h4>
+            <p>3-serie G20</p>
+            <h3>1 799:-</h3>
+            <button>Boka →</button>
+        </nav>
+        
+    </section>
+    
+    <nav class="space1"></nav>
+
+
+
+    
+       <!-- FOOTER -->
+       <footer>
+        <span class="footerDetail"></span>
+        <img class="logoFooter" src="bilder/icon140w.png" alt="">
+        <div class="trustPilotInfo">
+            <img src="bilder2/5trustpilotstars.png" class="5TPStarsFooter" alt="">
+            <h6>6.7k omdömen på</h6>
+            <img src="bilder2/trustpilotlogo.png" alt="">
+            <h6>Trustpilot</h6>
+        </div>
+
+        
+        <div class="footerLinks">
+            <nav class="FöretagLinks">
+                <h4>Företag</h4>
+                <p><a href="html/info.html">Om oss</a></p>
+                <p><a href="html/collection.html">Kollektion</a></p>
+                <p><a href="html/info.html">Medlemskap</a></p>
+                <p><a href="html/info.html">FAQ</a></p>
+            </nav>
+            <nav class="KundserviceLinks">
+                <h4>Kundservice</h4>
+                <p>Din bokning</p>
+                <p><a href="html/info.html">Hjälp Center</a></p>
+                <p>Garantier</p>
+            </nav>
+        </div>
+        <span class="seperateSpanFooter"></span>
+        <div class="extraLinksBottom">
+            <h4 class="titleOther">Annat</h4>
+            <p>Privacy Policy</p>
+            <p>Cookie Policy</p>
+            <p>Terms Of Conditions</p>
+        </div>
+        <span class="footerDetail2"></span>
+        <h6 class="copyRightText">© DriveLux 2026</h6>
+    </footer>
+
+    
+
+
+</body>
+</html>
